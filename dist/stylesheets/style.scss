@@ -1,0 +1,97 @@
+// COLORS
+$greyblue: rgb(68, 83, 97);
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+body{
+  @include text-normal();
+  font-size: 1.4em;
+  color: $greyblue;
+	line-height: 1;
+}
+
+a{
+  color: #00B7FF;
+}
+
+b, strong{
+   @include text-bold();
+}
+
+h1{
+  @include title-normal(); 
+}
+
+h2{
+	@include title-normal();
+	font-size: 1.1em;
+	font-weight: light;
+}
+
+h3{
+	@include title-normal();
+	font-size: 0.9em;
+	font-weight: light;
+}
+
+p{
+  font-size: 0.7em;
+}
+
+.container{
+  width: 50%; 
+	min-height: 100%;
+	display: flex;
+	
+	& > .box{
+		padding: 0 50px;
+		flex: 1;
+		align-self: center;
+	}
+}
+
+.label{
+	font-size: 0.5em;
+	background: #eee;
+	color: #999;
+	display: inline-block;
+	border-radius: 7px;
+	padding: 7px 12px;
+	transition:all 0.3s ease;
+	
+	&:before{
+		content: '\2022';
+		color: white;
+		margin-right: 5px;
+	}
+	
+	&:not(.showAllLabel):hover{
+		 transform: rotateZ(-10deg);
+	}
+}
+
+.hidden{
+	display: none;
+}
+
+.showAllLabel{
+	cursor: pointer;
+	
+	&:hover{
+		color: #777;
+	}
+	
+}
+
+@media screen and (max-width: 1024px){
+	
+	.container{
+		width: 100%;
+	}
+	
+}

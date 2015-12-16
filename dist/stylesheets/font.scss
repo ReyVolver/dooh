@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: font-url('HelveticaNeue/HelveticaNeueLTStd-Roman.eot');
+  src: font-url('HelveticaNeue/HelveticaNeueLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+      //  font-url('HelveticaNeue/HelveticaNeueLTStd-Roman.woff2') format('woff2'),
+      //  font-url('HelveticaNeue/HelveticaNeueLTStd-Roman.woff') format('woff'),
+       font-url('HelveticaNeue/HelveticaNeueLTStd-Roman.ttf') format('truetype'),
+       font-url('HelveticaNeue/HelveticaNeueLTStd-Roman.svg#HelveticaNeueLTStd-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+  src: font-url('HelveticaNeue/HelveticaNeueLTStd-Md.eot');
+  src: font-url('HelveticaNeue/HelveticaNeueLTStd-Md.eot?#iefix') format('embedded-opentype'),
+      //  font-url('HelveticaNeue/HelveticaNeueLTStd-Md.woff2') format('woff2'),
+      //  font-url('HelveticaNeue/HelveticaNeueLTStd-Md.woff') format('woff'),
+       font-url('HelveticaNeue/HelveticaNeueLTStd-Md.ttf') format('truetype'),
+       font-url('HelveticaNeue/HelveticaNeueLTStd-Md.svg#HelveticaNeueLTStd-Md') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  src: font-url('HelveticaNeue/HelveticaNeueLTStd-Th.eot');
+  src: font-url('HelveticaNeue/HelveticaNeueLTStd-Th.eot?#iefix') format('embedded-opentype'),
+      //  font-url('HelveticaNeue/HelveticaNeueLTStd-Th.woff2') format('woff2'),
+      //  font-url('HelveticaNeue/HelveticaNeueLTStd-Th.woff') format('woff'),
+       font-url('HelveticaNeue/HelveticaNeueLTStd-Th.ttf') format('truetype'),
+       font-url('HelveticaNeue/HelveticaNeueLTStd-Th.svg#HelveticaNeueLTStd-Th') format('svg');
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: font-url('ProximaNova/ProximaNova-Regular.eot');
+  src: font-url('ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+      //  font-url('ProximaNova/ProximaNova-Regular.woff2') format('woff2'),
+      //  font-url('ProximaNova/ProximaNova-Regular.woff') format('woff'),
+       font-url('ProximaNova/ProximaNova-Regular.ttf') format('truetype'),
+       font-url('ProximaNova/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: font-url('ProximaNova/ProximaNova-Light.eot');
+  src: font-url('ProximaNova/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+      //  font-url('ProximaNova/ProximaNova-Regular.woff2') format('woff2'),
+      //  font-url('ProximaNova/ProximaNova-Regular.woff') format('woff'),
+       font-url('ProximaNova/ProximaNova-Light.ttf') format('truetype'),
+       font-url('ProximaNova/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+  font-weight: light;
+  font-style: normal;
+}
+
+@mixin text-normal(){
+  font-family: "Helvetica Neue", Verdana, sans-serif;
+}
+
+@mixin text-bold(){
+  font-family: "Helvetica Neue Bold", Verdana, sans-serif;
+}
+
+@mixin text-light(){
+  font-family: "Helvetica Neue Light", Verdana, sans-serif;
+}
+
+@mixin title-normal(){
+  font-family: "Proxima Nova", Verdana, sans-serif;
+}
+
+@mixin title-light(){
+  font-family: "Proxima Nova Light", Verdana, sans-serif;
+}
