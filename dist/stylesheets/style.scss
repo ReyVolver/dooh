@@ -1,11 +1,14 @@
 // COLORS
 $greyblue: rgb(68, 83, 97);
 
+*{
+	box-sizing: border-box;
+}
+
 html, body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	box-sizing: border-box;
 }
 
 body{
@@ -13,6 +16,7 @@ body{
   font-size: 1.4em;
   color: $greyblue;
 	line-height: 1;
+	position: relative;
 }
 
 a{
@@ -29,7 +33,7 @@ h1{
 
 h2{
 	@include title-normal();
-	font-size: 1.1em;
+	font-size: 1.2em;
 	font-weight: light;
 }
 
@@ -39,20 +43,27 @@ h3{
 	font-weight: light;
 }
 
+.title-greetings{
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+.title-roles{
+	text-transform: uppercase;
+	font-size: 1.4em;
+	color: #ccc;
+	margin-top: 0;
+}
+
 p{
-  font-size: 0.7em;
+  font-size: 0.8em;
+	line-height: 1.4em;
 }
 
 .container{
-  width: 50%; 
-	min-height: 100%;
-	display: flex;
-	
-	& > .box{
-		padding: 0 50px;
-		flex: 1;
-		align-self: center;
-	}
+  width: 800px; 
+	margin: 0 auto;	
+	padding-top: 100px;
 }
 
 .label{
@@ -77,6 +88,11 @@ p{
 
 .hidden{
 	display: none;
+}
+
+.keyword{
+	font-weight: bold;
+	color: lighten($greyblue, 10%);
 }
 
 .showAllLabel{

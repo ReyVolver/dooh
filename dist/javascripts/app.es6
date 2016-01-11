@@ -7,30 +7,25 @@ import { Konami } from './konami.es6';
 
 		new Konami();
 
-		let showAllLabel = document.querySelector('.showAllLabel');
-		
-		showAllLabel.addEventListener('click', (e) => {
-			
-			let hiddenLabels = document.querySelectorAll('.label.hidden');
-			
-			console.log(hiddenLabels);
-			
-			for (let i = 0; i < hiddenLabels.length; i++){
-				hiddenLabels[i].className = 'label';
-			}
-			
-			showAllLabel.classList.add('hidden');
-			
-		});
-		
+		let roles = ['a fullstack developer', 'crafting website', 'a javascript lover'];
+		let rolesDOM = document.querySelector('.roles');
+		let i = 0;
+
+		if (rolesDOM){
+			setInterval(()=> {
+				rolesDOM.textContent = roles[i];
+				i = (i < roles.length - 1) ? i + 1 : 0;
+			}, 3000);
+		}
+
 	});
 
 })();
 
 function ready(fn) {
-  if (document.readyState != 'loading') {
-    fn();
-  } else {
-    document.addEventListener('DOMContentLoaded', fn);
-  }
+	if (document.readyState != 'loading') {
+		fn();
+	} else {
+		document.addEventListener('DOMContentLoaded', fn);
+	}
 }

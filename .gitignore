@@ -37,3 +37,5 @@ node_modules
 .sass-cache
 .vscode
 jsconfig.json
+
+public/**/*
